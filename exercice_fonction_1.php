@@ -47,5 +47,20 @@ function depenses($somme) {
 }
 echo "Les dépenses sont de ".depenses($array)." euros.";
 
+//Exercice 5
+$mot = "kayak";
+$ind = 0;
 
+function verifimot($exe) {
+  $nb = strlen($exe);
+
+  for ($i=0; $i < $nb/2 ; $i++) {
+    $ind = $exe[$i];
+    if ($exe[$i] != $exe[($nb-1)-$i]) {
+      $result1 = "il y a un problème";
+      return $result1;
+    }
+  }
+$result2 = "tout est ok"; return $result2;}
+ echo 'Je test le mot Kayak, et '.verifimot($mot);
  ?>
