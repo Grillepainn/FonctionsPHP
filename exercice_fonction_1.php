@@ -45,6 +45,7 @@ function depenses($somme) {
   }
   return $total;
 }
-
 echo "Les dépenses sont de ".depenses($array)." euros.";
+
+
  ?>
