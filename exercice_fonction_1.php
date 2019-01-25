@@ -37,5 +37,14 @@ nombre($nombre2, $nombre1);
 echo "La somme des dépenses est de ".$total." euros.";
 
 //Exercice 4.2
+$array = array(2,8,15,47,23);
+function depenses($somme) {
+  $total = 0;
+  for ($i=0; $i < count($somme) ; $i++) {
+    $total = $total + $somme[$i];
+  }
+  return $total;
+}
 
+echo "Les dépenses sont de ".depenses($array)." euros.";
  ?>
